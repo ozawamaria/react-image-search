@@ -1,4 +1,7 @@
 import React from 'react';
+import Masonry from 'react-masonry-component';
+
+import '../styles/ImageList.css';
 
 //imagesをAppから受け取る
 const ImageList = (props) => {
@@ -11,9 +14,7 @@ const ImageList = (props) => {
         );
     });
 
-    return (
-        <div>{images}</div>
-    );
+    return <Masonry className="image-List">{images}</Masonry>
 };
 
 export default ImageList;
